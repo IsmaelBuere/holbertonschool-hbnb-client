@@ -28,7 +28,7 @@ def login():
     user = next((u for u in users if u['email'] == email and u['password'] == password), None)
     
     if not user:
-        print(f"User not found or invalid password for: {email}")
+        print("User not found or invalid password for: {}".format(email))
         return jsonify({"msg": "Invalid credentials"}), 401
 
     access_token = create_access_token(identity=user['id'])

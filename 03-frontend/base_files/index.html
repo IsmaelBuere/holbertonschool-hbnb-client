@@ -8,21 +8,21 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="login.html" id="login-link">Login</a>
-        </nav>
+        <img src="logo.png" class="logo" alt="Logo">
+        <a href="login.html" class="login-button">Login</a>
     </header>
     <main>
-        <section id="filter">
-            <label for="country-filter">Filter by Country:</label>
-            <select id="country-filter">
-                <!-- Options will be populated dynamically -->
-            </select>
-        </section>
-        <section id="places-list">
-            <!-- List of places will be populated dynamically -->
-        </section>
+        <div class="place-card">
+            <img src="place1.jpg" class="place-image" alt="Place 1">
+            <h2>Place 1</h2>
+            <p>Price per night: $100</p>
+            <p>Location: City 1</p>
+            <button class="details-button">View Details</button>
+        </div>
+        <!-- Repeat .place-card for other places -->
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
 </body>
 </html>
