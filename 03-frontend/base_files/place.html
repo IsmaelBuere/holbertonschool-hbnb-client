@@ -8,31 +8,45 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" class="logo" alt="Logo">
-        <a href="login.html" class="login-button">Login</a>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="place.html">Places</a></li>
+                <li><a href="add_review.html">Reviews</a></li>
+            </ul>
+        </nav>
+        <div class="login-button">
+            <a href="login.html">Login</a>
+        </div>
     </header>
     <main>
-        <div class="place-details">
-            <img src="place1-large.jpg" class="place-image-large" alt="Place 1">
-            <h1>Place 1</h1>
-            <p>Host: John Doe</p>
-            <p>Price per night: $100</p>
-            <p>Location: City 1</p>
-            <p>Description: A beautiful place...</p>
-            <p>Amenities: Wi-Fi, Air Conditioning...</p>
-        </div>
+        <h1>Beautiful Beach House</h1>
+        <section class="place-details">
+            <p><strong>Host:</strong> John Doe</p>
+            <p><strong>Price per night:</strong> $150</p>
+            <p><strong>Location:</strong> Los Angeles, United States</p>
+            <p><strong>Description:</strong> A beautiful beach house with amazing views...</p>
+            <p><strong>Amenities:</strong> WiFi, Pool, Air Conditioning</p>
+        </section>
+        <h2 class="review">Reviews</h2>
         <div class="reviews">
-            <div class="review-card">
-                <p>Comment: Great place!</p>
-                <p>User: Jane Doe</p>
-                <p>Rating: 5 stars</p>
+            <div class="review">
+                <p><strong>Jane Smith:</strong></p>
+                <p>Great place to stay!</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
             </div>
-            <!-- Repeat .review-card for other reviews -->
+            <div class="review">
+                <p><strong>Robert Brown:</strong></p>
+                <p>Amazing location and very comfortable.</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+            </div>
         </div>
-        <a href="add_review.html" class="add-review">Add Review</a>
     </main>
     <footer>
-        <p>All rights reserved</p>
+        <p>&copy; 2024 All rights reserved</p>
     </footer>
 </body>
 </html>

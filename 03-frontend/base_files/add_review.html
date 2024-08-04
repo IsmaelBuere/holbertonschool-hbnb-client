@@ -1,34 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Review</title>
+    <title>Add Review - HBnB</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" class="logo" alt="Logo">
-        <a href="login.html" class="login-button">Login</a>
+    <header class="header-container">
+        <div class="logo">
+            <img src="logo.png" alt="HBnB Logo">
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="place.html">Places</a></li>
+                <li><a href="add_review.html">Reviews</a></li>
+            </ul>
+        </nav>
+        <div class="login-button">
+            <a href="login.html">Login</a>
+        </div>
     </header>
     <main>
-        <form>
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" required></textarea>
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating" required>
-                <option value="" disabled selected>Select rating</option>
-                <option value="1">1 star</option>
-                <option value="2">2 stars</option>
-                <option value="3">3 stars</option>
-                <option value="4">4 stars</option>
-                <option value="5">5 stars</option>
-            </select>
-            <button type="submit">Submit</button>
-        </form>
+        <section class="add-review">
+            <h1>Add a Review</h1>
+            <form action="submit_review.html" method="post" class="form">
+                <textarea name="review" placeholder="Your Review" required></textarea>
+                <label for="rating">Rating:</label>
+                <select name="rating" id="rating">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>All rights reserved</p>
+        <p>© 2024 HBnB Evolution. All rights reserved.</p>
     </footer>
 </body>
 </html>

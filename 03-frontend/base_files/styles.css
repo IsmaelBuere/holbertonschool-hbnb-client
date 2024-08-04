@@ -2,47 +2,251 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    height: 100%;
 }
 
-header, footer {
+header {
+    background-color: #FFA500;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
     text-align: center;
-    padding: 10px 0;
-    background-color: #f8f8f8;
+    padding: 20px;
 }
 
 .logo {
-    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
 }
 
 .login-button {
-    margin-left: auto;
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.place-card, .review-card {
+.login-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #FFA500;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-button a:hover {
+    background-color: #ff8800;
+}
+
+.nav-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #ff8800;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.filter {
+    margin: 20px 0;
+}
+
+.places {
+    text-align: center;
+    padding: 20px;
+}
+.country-filter {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.country-filter label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.country-filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.place-card {
     margin: 20px;
     padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.place-image-large {
+    width: 71%;
     border-radius: 10px;
 }
 
-.place-image, .place-image-large {
+.details-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-card {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.place-image {
     width: 100%;
     border-radius: 10px;
 }
 
-.details-button, .add-review {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #007BFF;
+.details-button {
+    background-color: #FFA500;
     color: white;
-    text-align: center;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.details-button:hover, .add-review:hover {
-    background-color: #0056b3;
+.details-button:hover {
+    background-color: #ff8800;
+}
+
+.place-details {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.place-details-text {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.3);
+    text-align: center;
+}
+
+.reviews-heading {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.reviews {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.3);
+    margin-bottom: 20px;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.add-review textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.add-review button {
+    background-color: #FFA500;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-review button:hover {
+    background-color: #ff8800;
+}
+
+button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF8C00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFA500;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
 }
